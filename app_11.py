@@ -19,24 +19,24 @@ class SampleWindow(QWidget):
     def setIcon(self):
         """ Function to set Icon
         """
-        appIcon = QIcon('favicon.jpg')
+        appIcon = QIcon('iconos/prueba.png')
         self.setWindowIcon(appIcon)
 
     def setIconModes(self):
-        myIcon1 = QIcon('favicon.jpg')
+        myIcon1 = QIcon('iconos/prueba.png')
         myLabel1 = QLabel('sample', self)
         pixmap1 = myIcon1.pixmap(50, 50, QIcon.Active, QIcon.On)
         myLabel1.setPixmap(pixmap1)
         myLabel1.setToolTip('Active Icon')
 
-        myIcon2 = QIcon('favicon.jpg')
+        myIcon2 = QIcon('iconos/prueba.png')
         myLabel2 = QLabel('sample', self)
         pixmap2 = myIcon2.pixmap(50, 50, QIcon.Disabled, QIcon.Off)
         myLabel2.setPixmap(pixmap2)
         myLabel2.move(50, 0)
         myLabel2.setToolTip('Disabled Icon')
 
-        myIcon3 = QIcon('favicon.jpg')
+        myIcon3 = QIcon('iconos/prueba.png')
         myLabel3 = QLabel('sample', self)
         pixmap3 = myIcon3.pixmap(50, 50, QIcon.Selected, QIcon.On)
         myLabel3.setPixmap(pixmap3)
